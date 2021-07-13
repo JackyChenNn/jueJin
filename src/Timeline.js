@@ -3,7 +3,7 @@ function Timeline(){
         //二级导航栏及底下页面
         <div className = 'view timeline-index-view'>
             {/*二级导航栏*/}
-            <nav className="tag-nav tag-navigatorv">
+            <nav className="tag-nav tag-navigatorv" style={{position:"fixed",top:70}}>
                 <ul className="nav-list tag-list">
                     <li className="nav-item tag">
                         <a href="/frontend">全部</a>
@@ -17,7 +17,7 @@ function Timeline(){
                 </ul>
             </nav>
             {/*导航栏底下页面*/}
-            <div id="timeline-content">
+            <div id="timeline-content" style={{position:"fixed",top:140}}>
                 <div id="entry-list-container">
 
                     {/*热门最新推荐Tag*/}
