@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App';
-import Navigation from './Navigation'
-import Timeline from "./Timeline";
+import App from './App';
+// import Index from './components/Index'
+// import Index from "./components/Index";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/*<App />*/}
-    <Navigation />
-    <Timeline />
+    <App />
+    {/*<Index />*/}
+    {/*<Index />*/}
   </React.StrictMode>,
   document.getElementById('root')
 );
