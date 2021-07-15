@@ -1,5 +1,9 @@
 import React,{Component} from "react";
 import "./index.css";
+import {Link,Route} from "react-router-dom";
+import Backend from "../Backend";
+import Recommended from "../Recommended";
+import Frontend from "../Frontend";
 
 export default class Timeline extends Component {
     render(){
@@ -10,18 +14,18 @@ export default class Timeline extends Component {
                 <nav className="tag-nav tag-navigatorv" style={{position:"fixed",top:70}}>
                     <ul className="nav-list tag-list">
                         <li className="nav-item tag">
-                            <a href="/frontend">全部</a>
+                            <Link to="/frontend">全部</Link>
                         </li>
                         <li className="nav-item tag">
-                            <a href="/frontend">前端</a>
+                            <Link to="/frontend">前端</Link>
                         </li>
                         <li className="nav-item tag">
-                            <a href="/frontend/Js">Js</a>
+                            <Link to="/frontend">Js</Link>
                         </li>
                     </ul>
                 </nav>
                 {/*导航栏底下页面*/}
-                <div id="timeline-content" style={{position:"fixed",top:140}}>
+                <div id="timeline-content" style={{position:"fixed",top:120}}>
                     <div id="entry-list-container">
 
                         {/*热门最新推荐Tag*/}
@@ -44,7 +48,11 @@ export default class Timeline extends Component {
                         {/*文章列表*/}
                         <div className="entry-list-wrap">
                             <ul className="entry-list">
-                                <div></div>
+                                <div>
+                                    <Route path = '/Recommended' component={Recommended}/>
+                                    <Route path = '/Backend' component={Backend}/>
+                                    <Route path = '/Frontend' component={Frontend}/>
+                                </div>
                             </ul>
                         </div>
                     </div>
