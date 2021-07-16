@@ -8,26 +8,24 @@ export default class Navigation extends Component{
             //一级导航栏
             <nav className = 'view-nav'>
                 <div className="nav-list left">
-                    {/*<BrowserRouter>*/}
-                    {/*    <Link to="/recomended" className="nav-item router-link-exact-active route-active active">*/}
-                    {/*        <div>推荐</div>*/}
-                    {/*    </Link>*/}
-                    {/*    <Link to="/backend" className="nav-item">*/}
-                    {/*        <div>后端</div>*/}
-                    {/*    </Link>*/}
-                    {/*    <Link to="/frontend" className="nav-item">*/}
-                    {/*        <div>前端</div>*/}
-                    {/*    </Link>*/}
-                    {/*</BrowserRouter>*/}
-                    <a href="/recommended" className="nav-item router-link-exact-active route-active active">
-                         <div>推荐</div>
-                    </a>
-                    <a href="/backend" className="nav-item">
+                    <Link to="/recommended" className="nav-item">
+                        <div>推荐</div>
+                    </Link>
+                    <Link to="/backend" className="nav-item">
                         <div>后端</div>
-                    </a>
-                    <a href="/frontend" className="nav-item">
+                    </Link>
+                    <Link to="/frontend" className="nav-item">
                         <div>前端</div>
-                    </a>
+                    </Link>
+                    {/*<a href="/recommended" className="nav-item router-link-exact-active route-active active">*/}
+                    {/*     <div>推荐</div>*/}
+                    {/*</a>*/}
+                    {/*<a href="/backend" className="nav-item">*/}
+                    {/*    <div>后端</div>*/}
+                    {/*</a>*/}
+                    {/*<a href="/frontend" className="nav-item">*/}
+                    {/*    <div>前端</div>*/}
+                    {/*</a>*/}
                 </div>
             </nav>
         )
